@@ -1,7 +1,12 @@
-// app/chat/[id]/page.js
-import { useState, useEffect } from 'react';
 
-export default function ChatRoom({ id }) {
+'use client'
+
+import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
+
+export default function ChatRoom() {
+  const params = useParams();
+  const id = params.id;
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
 
@@ -47,7 +52,7 @@ export default function ChatRoom({ id }) {
           fontSize: '0.9rem',
           color: '#aaa'
         }}>
-          Room: {id.slice(0, 6)}
+          Room: {id?.slice(0, 6)}
         </span>
       </div>
 
@@ -130,9 +135,4 @@ export default function ChatRoom({ id }) {
       </form>
     </div>
   );
-}
-
-// Get the room ID from the URL
-export async function getServerSideProps({ params }) {
-  return { props: { id: params.id } };
 }
