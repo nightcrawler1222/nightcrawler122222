@@ -1,4 +1,4 @@
-// app/page.js
+
 import Link from 'next/link';
 
 export default function Home() {
@@ -44,7 +44,7 @@ export default function Home() {
           <iframe
             width="300"
             height="180"
-            src="https://www.youtube.com/embed?listType=user_uploads&list=nightcrawler1222"
+            src="https://www.youtube.com/embed/jaPxxzlrhx8"
             title="YouTube"
             frameBorder="0"
             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
@@ -98,7 +98,7 @@ export default function Home() {
           gap: '20px',
           justifyContent: 'center'
         }}>
-          // $1 — 5-Minute Chat Button (Ko-fi)
+          {/* $1 — 5-Minute Chat Button (Ko-fi) */}
           <a
             href="https://ko-fi.com/nightcrawler1222"
             target="_blank"
@@ -120,7 +120,6 @@ export default function Home() {
             $1 — 5 Minutes Chat
           </a>
 
-
           {/* $10 Button */}
           <a
             href="https://ko-fi.com/nightcrawler1222"
@@ -141,7 +140,9 @@ export default function Home() {
             }}
           >
             $10 — 20 Minutes Chat
-            </a>
+          </a>
+        </div>
+      </div>
 
       <footer style={{
         marginTop: '80px',
