@@ -1,0 +1,20 @@
+// app/success.js
+export default function Success() {
+  return (
+    <div style={{
+      textAlign: 'center',
+      padding: '100px 20px',
+      background: '#0f0f0f',
+      color: 'white',
+      minHeight: '100vh'
+    }}>
+      <h1 style={{ fontSize: '3rem', color: '#00ff88' }}>✅ Payment Successful!</h1>
+      <p style={{ fontSize: '1.5rem', margin: '20px 0' }}>
+        Thank you! You can now chat with nightcrawler1222.
+      </p>
+      <p style={{ color: '#ccc' }}>
+        I'll reach out to you shortly via DM.
+      </p>
+    </div>
+  );
+}
